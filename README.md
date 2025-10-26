@@ -2,10 +2,10 @@
 
 ```mermaid
 flowchart LR
-    USERS[USERS<br/>id (PK)<br/>username<br/>full_name<br/>role]
-    ORDERS[ORDERS<br/>id (PK)<br/>user_id (FK)<br/>total_amount<br/>status]
-    ORDER_ITEMS[ORDER_ITEMS<br/>order_item_id (PK)<br/>order_id (FK)<br/>product_id (FK)<br/>quantity<br/>price_per_unit]
-    PRODUCTS[PRODUCTS<br/>id (PK)<br/>sku<br/>name<br/>price<br/>stock_quantity]
+    USERS["USERS\nid (PK)\nusername\nfull_name\nrole"]
+    ORDERS["ORDERS\nid (PK)\nuser_id (FK)\ntotal_amount\nstatus"]
+    ORDER_ITEMS["ORDER_ITEMS\norder_item_id (PK)\norder_id (FK)\nproduct_id (FK)\nquantity\nprice_per_unit"]
+    PRODUCTS["PRODUCTS\nid (PK)\nsku\nname\nprice\nstock_quantity"]
 
     USERS -->|places| ORDERS
     ORDERS -->|contains| ORDER_ITEMS
